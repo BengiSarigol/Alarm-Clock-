@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="22dp"
+    tools:context=".AlarmDetay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TimePicker
+            android:id="@+id/timepicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"></TimePicker>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/alarm_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="18dp"
+            android:hint="Alarm İsmi"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/Divider"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Haftalık Tekrar"
+                android:textStyle="bold"
+                />
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/alarm_tekrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"></View>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+            <TableRow>
+                <TextView
+                    android:text="Pazartesi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/alarm_tekrar_pazartesi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Salı"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/alarm_tekrar_sali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Çarşamba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/alarm_tekrar_carsamba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Perşembe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/alarm_tekrar_perşembe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Cuma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/alarm_tekrar_cuma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Cumartesi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/alarm_tekrar_cumartesi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Pazar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/alarm_tekrar_pazar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false" />
+            </TableRow>
+
+        </TableLayout>
+        <View
+            android:id="@+id/divider3"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"></View>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_ringtone_container"
+            android:background="@drawable/view_touch"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Alarm Melodisi"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/secilen_melodi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="16sp"
+                android:text="Lütfen bir melodi seçiniz">
+
+            </TextView>
+        </LinearLayout>
+        <View
+            android:id="@+id/divider4"
+            style="@style/Divider"
+            android:layout_marginTop="10dp"></View>
+
+    </LinearLayout>
+</ScrollView>

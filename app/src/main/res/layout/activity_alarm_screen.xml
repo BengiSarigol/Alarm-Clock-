@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00 : 00"
+        android:id="@+id/alarm_screen_time"
+        android:textSize="70dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/alarm_screen_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginBottom="25dp"
+        android:text="Alarm ismi"
+        android:textColor="?attr/colorAccent"
+        android:textSize="30dp" />
+
+
+    <ImageView
+        android:id="@+id/iv_saat"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:cropToPadding="true"
+        android:src="@drawable/anim_saat"
+
+        />
+
+
+    <Button
+        android:id="@+id/alarm_screen_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buton_selector"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:text="Tamam"
+        android:textColor="#FFFFFF" />
+
+
+
+</LinearLayout>

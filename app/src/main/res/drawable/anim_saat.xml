@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/saat3"
+        android:duration="300"/>
+    <item android:duration="300"
+        android:drawable="@drawable/saat4"/>
+    <item android:duration="300"
+        android:drawable="@drawable/saat2"/>
+    <item android:duration="300"
+        android:drawable="@drawable/saat1"/>
+</animation-list>
